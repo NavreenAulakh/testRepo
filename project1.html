@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Guam Kingfisher</title>
+
+    <style>
+              body {
+                background: radial-gradient(905px at 4.9% 85.8%, rgb(255, 243, 242) 0.1%, rgb(255, 247, 220) 57.6%);
+              }
+
+              h1 {
+                text-align: center;
+                font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+                  sans-serif;
+                margin-block-end: 0px;
+              }
+
+              h2 {
+                text-align: center;
+                font-family: monospace;
+                margin-block-start: 4px;
+                font-weight: lighter;
+                color: #155263;
+              }
+              img {
+                display: block;
+                margin: auto;
+                max-width: 90%;
+                border-radius: 5px;
+              }
+
+              hr{
+                max-width:80%;
+              }
+              p {
+                text-align: center;
+                font-family: monospace;
+                font-size: 12px;
+                margin: 2% 5%;
+                line-height: 20px;
+              }
+
+              .credit{
+      text-align: center;
+                font-family: monospace;
+                font-size: 10px;
+                 margin: 10px;
+              }
+
+              button {
+                display: block;
+                margin: auto;
+                font-family: monospace;
+                color: white;
+                background: #155263;
+                padding: 14px 18px;
+                border: 0px #ff6f3c;  solid;
+                border-radius: 2px;
+                box-shadow: 2px 3px rgba(0, 0, 0, 0.1);
+              }
+
+              button:hover {
+                color: white;
+                background: #ff6f3c;
+                transition: all 200ms ease-in-out;
+              }
+
+              a {
+                margin: auto;
+                text-decoration: none;
+                color: #155263;
+                font-weight: bolder;
+              }
+
+              a:hover {
+                text-decoration: underline;
+                color: #ff9a3c;
+                transition: all 300ms ease-in-out;
+              }
+
+            .species:hover{
+                color:#ff6f3c;
+                font-weight: bolder;
+            }
+    </style>
+  </head>
+  <body>
+    <h1 class="species">The Guam Kingfisher</h1>
+    <h2>(Todiramphus cinnamominus)</h2>
+
+    <img
+      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/049/666/original/960x0.jpeg?1666406265"
+    />
+    <hr />
+    <p>
+      <span class="species">The Guam kingfisher </span>is a medium-sized bird
+      (roughly the size of a <span class="species">robin </span>) with a large
+      head and strong beak. It is an <strong> aggressive bird </strong>that
+      establishes and defends nesting territories, and it has a loud, raspy,
+      distinct call. <br />
+      This species was once found only on the island of Guam but is now extinct
+      in the wild. In Chamorro, this species is known as <em>"sihek" </em>on
+      Guam.
+
+      <a
+        href="https://www.youtube.com/watch?v=5dnouQtSIL0&ab_channel=Animalogic"
+        target="blank"
+      >
+        See the Guam Kingfisher in action.
+      </a>
+    </p>
+    <button>Buy Tickets to see it</button>
+
+    <div class="credit">
+      Coded by
+      <a href="https://www.linkedin.com/in/navreen-a-b57013b4/" target="blank">
+        Navreen Aulakh
+      </a>
+    </div>
+
+    <script>
+      function buyTickets() {
+        let name = prompt("What is your name?");
+        let faveBird = prompt("What's your favourite bird?");
+        faveBird.trim;
+        faveBird.toLowerCase;
+        if (faveBird.includes("king")) {
+          alert("Thanks, " + name + "." + " That's our favourite bird too!🦆");
+        } else {
+          alert(
+            "Thanks for your feedback, " +
+              " " +
+              name +
+              "." +
+              "Our next website will be about the " +
+              faveBird.replace("the", " ") +
+              ".  🕊️"
+          );
+        }
+      }
+
+      let button = document.querySelector("button");
+      button.addEventListener("click", buyTickets);
+    </script>
+  </body>
+</html>
